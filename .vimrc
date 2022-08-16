@@ -42,6 +42,24 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+" Utils
+let g:ycm_confirm_extra_conf           = 0
+let g:ycm_auto_trigger                 = 1
+let g:ycm_key_list_select_completion   = ['<C-j>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+nnoremap <leader>gl :YcmCompleter GoToDeclaration <CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition <CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration <CR>
+
+let g:UltiSnipsListSnippets        = "<C-g><Tab>"
+let g:UltiSnipsExpandTrigger       = "<Tab>"
+let g:UltiSnipsJumpForwardTrigger  = "<Tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
+let g:UltiSnipsSnippetDirectories  = ['~/.vim/UltiSnips', 'UltiSnips']
+let g:UltiSnipsEditSplit           = "vertical"
+
 " Syntastic
 Plug 'scrooloose/syntastic'
 set statusline+=%#warningmsg#
