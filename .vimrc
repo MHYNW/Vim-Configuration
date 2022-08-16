@@ -34,8 +34,13 @@ Plug 'vim-airline/vim-airline'
 " Tagbar
 Plug 'majutsushi/tagbar'
 
-" Auto Colpletion
+" Auto Completion
 Plug 'valloric/youcompleteme'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Snippet
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " Syntastic
 Plug 'scrooloose/syntastic'
