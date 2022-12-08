@@ -12,6 +12,11 @@ Plug 'preservim/nerdtree'
 " Auto Indent
 set autoindent
 set cindent
+set tabstop=2
+set visualbell
+set incsearch
+set ts=2
+set sw=2
 
 " Set Line Numbere
 set nu
